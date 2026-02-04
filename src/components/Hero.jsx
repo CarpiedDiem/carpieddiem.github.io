@@ -79,7 +79,7 @@ const Hero = () => {
             }
           `}</style>
                     <img
-                        src="/assets/logo-full.png"
+                        src="/assets/full_without_back.png"
                         alt="Carpied Diem Illustration"
                         style={{
                             width: '100%',

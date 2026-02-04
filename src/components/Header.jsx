@@ -30,7 +30,7 @@ const Header = () => {
         }}>
             <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                 <a href="#" className="logo" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                    <img src="/assets/logo-circle.png" alt="Carpied Diem Logo" style={{ height: '50px' }} />
+                    <img src="/assets/circle_without_back.png" alt="Carpied Diem Logo" style={{ height: '50px' }} />
                     <span style={{ fontSize: '1.5rem', fontWeight: 'bold', color: 'var(--color-primary)' }}>Carpied Diem</span>
                 </a>
 
