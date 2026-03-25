@@ -20,30 +20,27 @@ const About = () => {
                         flexDirection: 'column',
                         gap: '1.5rem'
                     }}>
-                        <p>
-                            <strong>Carpied Diem</strong> naît d'une conviction profonde : nos pieds sont le socle de notre équilibre.
-                            Praticien certifié en réflexologie plantaire, je vous accompagne vers un mieux-être global en stimulant
-                            les capacités d'autorégulation de votre corps.
-                        </p>
-                        <p>
-                            La réflexologie est une technique manuelle ancestrale qui repose sur l'existence de zones réflexes
-                            au niveau des pieds, correspondant à chaque organe et partie du corps humain.
-                        </p>
                         <blockquote style={{
                             fontStyle: 'italic',
                             fontSize: '1.2rem',
                             color: 'var(--color-primary)',
                             borderLeft: '4px solid var(--color-secondary)',
                             paddingLeft: '1.5rem',
-                            margin: '2rem auto',
-                            maxWidth: '600px'
+                            margin: '0 auto',
+                            maxWidth: '600px',
+                            textAlign: 'left'
                         }}>
-                            "Les yeux sont le miroir de l'âme, les pieds le miroir du corps."
+                            « Les yeux sont le miroir de l'âme, les pieds le miroir du corps. »
                         </blockquote>
                         <p>
-                            J'interviens principalement à domicile dans le secteur de <strong>Brest</strong> et ses environs
-                            (Le Relecq-Kerhuon, Guipavas, Plabennec, Saint-Renan, Landerneau...), vous permettant de profiter
-                            des bienfaits de la séance dans le confort de votre foyer.
+                            Praticien certifié en réflexologie plantaire, je vous accompagne vers un mieux-être global en
+                            stimulant les capacités d'autorégulation de votre corps.
+                        </p>
+                        <p>
+                            Equipé d'une table de massage pliante mais très confortable, j'interviens principalement à domicile
+                            dans un secteur de 35 km autour de Guipavas, vous permettant de profiter des bienfaits de la séance
+                            dans le confort de votre foyer, (autres distances et lieux, me contacter préalablement pour un
+                            accord). Je reçois également à Guipavas.
                         </p>
                     </div>
                 </div>
@@ -56,7 +53,7 @@ const About = () => {
                     width: '100%'
                 }}>
                     {[
-                        { title: "Détente Profonde", desc: "Libère le stress et les tensions nerveuses accumulées." },
+                        { title: "Détente Profonde", desc: "Libère du stress et des tensions nerveuses accumulées." },
                         { title: "Circulation", desc: "Améliore la circulation sanguine et lymphatique." },
                         { title: "Équilibre", desc: "Favorise l'homéostasie et le fonctionnement naturel des organes." }
                     ].map((item, index) => (
@@ -75,6 +72,65 @@ const About = () => {
                             <p style={{ color: 'var(--color-text-light)' }}>{item.desc}</p>
                         </div>
                     ))}
+                </div>
+
+                {/* Parcours de Clément */}
+                <div className="content" style={{
+                    maxWidth: '800px',
+                    textAlign: 'left',
+                    fontSize: '1.1rem',
+                    color: 'var(--color-text-light)',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    gap: '1.5rem'
+                }}>
+                    <p>
+                        Mon parcours de plus de 30 années dans la marine nationale m'a permis de m'ouvrir à d'autres
+                        cultures, a développé mon sens de l'écoute et mon empathie.
+                    </p>
+                    <p>
+                        Après avoir suivi une formation en réflexologie plantaire et aussi pratiqué durant plus d'une année
+                        afin de préciser ma technique, je vous propose cette pratique bien être à base de pressions et
+                        touchers spécifiques sur les parties des pieds qui ont toutes une correspondance avec un organe ou
+                        une partie du corps.
+                    </p>
+                    <p>
+                        Cette pratique holistique et non intrusive et utilisée depuis des millénaires dans le cadre de la
+                        médecine traditionnelle chinoise.
+                    </p>
+                    <p>
+                        Chaque séance vous placera dans une bulle de réconfort et permettra à votre corps de s'autoréguler,
+                        (homéostasie). Bien entendu, la réflexologie plantaire n'a pas pour but de poser un diagnostique
+                        médical et ne saurait se substituer à la médecine conventionnelle ou allopathique mais doit être
+                        considérée comme une voie complémentaire qui permettra d'optimiser les effets de cette dernière.
+                    </p>
+                    <p>
+                        Elle ne doit en aucun cas être le prétexte à interrompre un traitement médical sans avis préalable
+                        d'un médecin conventionnel.
+                    </p>
+                    <p>
+                        <strong>Carpied Diem</strong> est né d'une simple évidence : nos pieds sont les organes les plus complexes de notre
+                        corps. Ils sont le lien direct de connexion entre l'être humain et notre belle planète.
+                    </p>
+                    <p>
+                        Ils savent parfaitement exprimer une multitude d'émotions telles que, (l'anxiété, le stress, la peur, le
+                        courage, la nervosité, le bonheur, la joie, la peine, la timidité, la prudence, l'ennui, la paresse, la
+                        fatigue, la pudeur, la vitalité, la confiance, la maladresse, la timidité, l'humilité, la dépression, la
+                        colère, la soumission, la séduction, la sensualité...etc).
+                    </p>
+                    <p>
+                        De plus, ils supportent 2,5 fois le poids de notre corps à chaque pas et durant notre vie auront
+                        transporté en moyenne plus de 5500 wagons de marchandises durant les 4 tours du monde qu'il
+                        nous auront permis de parcourir.
+                    </p>
+                    <p>
+                        Prendre précieusement soin de ces merveilleux compagnons de vie, c'est s'assurer le plus beau et
+                        plus sûr des voyages.
+                    </p>
+                    <p style={{ fontStyle: 'italic', color: 'var(--color-primary)', fontWeight: '500' }}>
+                        Osez découvrir ou redécouvrir ce que vos pieds peuvent vous raconter et vous accorder une
+                        inoubliable pause bien être.
+                    </p>
                 </div>
             </div>
         </section>
