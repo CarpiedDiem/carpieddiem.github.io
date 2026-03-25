@@ -50,8 +50,8 @@ const Hero = () => {
                         maxWidth: '600px',
                         marginInline: 'auto'
                     }}>
-                        Retrouvez l'équilibre naturel de votre organisme grâce à la réflexologie plantaire.
-                        Soins personnalisés à domicile ou en cabinet dans le Finistère.
+                        Retrouver l'équilibre naturel de votre corps et votre mental grâce à la réflexologie plantaire.
+                        Offrez ou offrez-vous un soin personnalisé à domicile ou en cabinet dans le Finistère.
                     </p>
                     <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
                         <a href="#contact" className="btn btn-primary" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>

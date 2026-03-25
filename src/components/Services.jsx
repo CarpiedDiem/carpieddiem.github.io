@@ -5,34 +5,38 @@ const Services = () => {
     const services = [
         {
             title: "Séance Complète",
-            duration: "1h",
-            price: "50€",
+            duration: "1h à 1h30",
+            price: "45€",
+            priceNote: "Tarif libre à partir de",
             features: [
                 "Bilan réflexologique",
                 "Détente et relaxation",
                 "Travail ciblé sur les zones de tension",
-                "Rééquilibrage global"
+                "Rééquilibrage global",
+                "Profond sentiment d'ancrage",
+                "Amélioration de votre sommeil"
             ]
         },
         {
             title: "Séance Découverte",
             duration: "30 min",
-            price: "30€",
+            price: "20€",
             features: [
                 "Découverte de la pratique",
                 "Relaxation immédiate",
                 "Soulagement des jambes lourdes",
-                "Idéal pour une première approche"
+                "Idéal pour une première approche",
+                "Régulation du système lymphatique"
             ]
         },
         {
             title: "Forfait Bien-être",
-            duration: "3 Séances",
-            price: "135€",
+            duration: "5 séances de 1h à 1h30",
+            price: "200€",
             features: [
                 "Suivi personnalisé",
                 "Travail en profondeur",
-                "Ancrage des bienfaits dans la durée",
+                "Persistance des bienfaits dans la durée",
                 "Tarif préférentiel"
             ]
         }
@@ -84,6 +88,11 @@ const Services = () => {
                             )}
 
                             <h3 style={{ fontSize: '1.5rem', marginBottom: '0.5rem' }}>{service.title}</h3>
+                            {service.priceNote && (
+                                <p style={{ color: 'var(--color-secondary)', fontSize: '0.9rem', fontWeight: '600', marginBottom: '0.25rem' }}>
+                                    {service.priceNote}
+                                </p>
+                            )}
                             <div style={{ display: 'flex', alignItems: 'baseline', gap: '0.5rem', marginBottom: '2rem' }}>
                                 <span style={{ fontSize: '2.5rem', fontWeight: 'bold', color: 'var(--color-primary)' }}>{service.price}</span>
                                 <span style={{ color: 'var(--color-text-light)' }}>/ {service.duration}</span>
