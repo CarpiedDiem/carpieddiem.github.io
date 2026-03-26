@@ -86,11 +86,11 @@ const About = () => {
                 }}>
                     <p>
                         Mon parcours de plus de 30 années dans la marine nationale m'a permis de m'ouvrir à d'autres
-                        cultures, a développé mon sens de l'écoute et mon empathie.
+                        cultures, et a développé mon sens de l'écoute et mon empathie.
                     </p>
                     <p>
                         Après avoir suivi une formation en réflexologie plantaire et aussi pratiqué durant plus d'une année
-                        afin de préciser ma technique, je vous propose cette pratique bien être à base de pressions et
+                        afin de préciser ma technique, je vous propose cette pratique bien être à base d'acupressions et
                         touchers spécifiques sur les parties des pieds qui ont toutes une correspondance avec un organe ou
                         une partie du corps.
                     </p>
@@ -100,7 +100,7 @@ const About = () => {
                     </p>
                     <p>
                         Chaque séance vous placera dans une bulle de réconfort et permettra à votre corps de s'autoréguler,
-                        (homéostasie). Bien entendu, la réflexologie plantaire n'a pas pour but de poser un diagnostique
+                        (homéostasie). Bien entendu, la réflexologie plantaire n'a pas pour but de poser un diagnostic
                         médical et ne saurait se substituer à la médecine conventionnelle ou allopathique mais doit être
                         considérée comme une voie complémentaire qui permettra d'optimiser les effets de cette dernière.
                     </p>
@@ -114,7 +114,7 @@ const About = () => {
                     </p>
                     <p>
                         Ils savent parfaitement exprimer une multitude d'émotions telles que, (l'anxiété, le stress, la peur, le
-                        courage, la nervosité, le bonheur, la joie, la peine, la timidité, la prudence, l'ennui, la paresse, la
+                        courage, la nervosité, le bonheur, la joie, la peine, la prudence, l'ennui, la paresse, la
                         fatigue, la pudeur, la vitalité, la confiance, la maladresse, la timidité, l'humilité, la dépression, la
                         colère, la soumission, la séduction, la sensualité...etc).
                     </p>
