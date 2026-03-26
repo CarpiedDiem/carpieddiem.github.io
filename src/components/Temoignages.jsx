@@ -76,7 +76,7 @@ const Temoignages = () => {
                         </p>
                         <div>
                             <p style={{ fontWeight: '600', color: 'var(--color-primary)' }}>Sophie</p>
-                            <p style={{ fontSize: '0.85rem', color: '#9ca3af' }}>Client(e) régulier(ère)</p>
+                            <p style={{ fontSize: '0.85rem', color: '#9ca3af' }}>Juillet 2025</p>
                         </div>
                     </div>
 
@@ -108,7 +108,7 @@ const Temoignages = () => {
                         </p>
                         <div>
                             <p style={{ fontWeight: '600', color: 'var(--color-primary)' }}>Valérie</p>
-                            <p style={{ fontSize: '0.85rem', color: '#9ca3af' }}>Client(e) régulier(ère)</p>
+                            <p style={{ fontSize: '0.85rem', color: '#9ca3af' }}>Mars 2025</p>
                         </div>
                     </div>
                 </div>
@@ -121,7 +121,7 @@ const Temoignages = () => {
                         className="btn btn-secondary"
                         style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}
                     >
-                        Rejoignez-nous sur Facebook
+                        Facebook
                     </a>
                 </div>
             </div>
