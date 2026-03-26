@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Footer = () => {
+const Footer = ({ onLegalClick }) => {
     return (
         <footer style={{ backgroundColor: 'var(--color-text)', color: 'white', padding: '3rem 0', textAlign: 'center' }}>
             <div className="container">
@@ -12,9 +12,25 @@ const Footer = () => {
                         La réflexologie plantaire au service de votre équilibre.
                     </p>
                     <div style={{ width: '100%', height: '1px', backgroundColor: '#374151', margin: '1rem 0' }}></div>
-                    <p style={{ color: '#6b7280', fontSize: '0.9rem' }}>
-                        © {new Date().getFullYear()} Carpied Diem - Clément Grava. Tous droits réservés.
-                    </p>
+                    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.75rem' }}>
+                        <button
+                            onClick={onLegalClick}
+                            style={{
+                                background: 'none',
+                                border: 'none',
+                                color: '#9ca3af',
+                                cursor: 'pointer',
+                                fontSize: '0.85rem',
+                                textDecoration: 'underline',
+                                fontFamily: 'inherit'
+                            }}
+                        >
+                            Mentions légales
+                        </button>
+                        <p style={{ color: '#6b7280', fontSize: '0.9rem' }}>
+                            © {new Date().getFullYear()} Carpied Diem - Clément Grava. Tous droits réservés.
+                        </p>
+                    </div>
                 </div>
             </div>
         </footer>
