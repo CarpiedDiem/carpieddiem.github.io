@@ -62,7 +62,6 @@ const LegalNotices = ({ isOpen, onClose }) => {
                             <strong>Carpied Diem</strong><br />
                             Clément Grava — Praticien en réflexologie plantaire<br />
                             SIRET : [À COMPLÉTER]<br />
-                            Adresse : [À COMPLÉTER — Guipavas]<br />
                             Email : <a href="mailto:carpied-diem@outlook.com" style={{ color: 'var(--color-secondary)' }}>carpied-diem@outlook.com</a>
                         </p>
                     </div>
