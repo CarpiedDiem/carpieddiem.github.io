@@ -49,7 +49,7 @@ const Services = () => {
 
                 <p style={{ textAlign: 'center', maxWidth: '600px', margin: '0 auto 3rem', color: 'var(--color-text-light)' }}>
                     Chaque séance est unique et adaptée à vos besoins du moment.
-                    Le déplacement est inclus dans un rayon proche (me consulter pour les détails).
+                    Le déplacement est inclus dans un rayon de 35 km autour de Guipavas (me consulter pour les détails).
                 </p>
 
                 <div style={{

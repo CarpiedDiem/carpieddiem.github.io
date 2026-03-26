@@ -10,9 +10,54 @@ const About = () => {
                 gap: '4rem'
             }}>
 
-                <div className="content" style={{ maxWidth: '800px', textAlign: 'center' }}>
-                    <h2 className="section-title">À propos</h2>
+                {/* En-tête À propos avec photo */}
+                <div style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '2rem',
+                    flexWrap: 'wrap',
+                    justifyContent: 'center'
+                }}>
+                    <div style={{ textAlign: 'center' }}>
+                        {/* TODO: Remplacer par la vraie photo de Clément */}
+                        <div style={{
+                            width: '140px',
+                            height: '140px',
+                            borderRadius: '50%',
+                            overflow: 'hidden',
+                            border: '3px solid var(--color-secondary)',
+                            boxShadow: '0 8px 20px rgba(44, 85, 69, 0.15)',
+                            backgroundColor: 'var(--color-accent)',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            margin: '0 auto'
+                        }}>
+                            <img
+                                src="/assets/photo-clement.jpg"
+                                alt="Clément - Praticien en réflexologie plantaire"
+                                style={{
+                                    width: '100%',
+                                    height: '100%',
+                                    objectFit: 'cover'
+                                }}
+                                onError={(e) => {
+                                    e.target.style.display = 'none';
+                                    e.target.parentElement.innerHTML = '<span style="font-size: 3rem; color: var(--color-secondary);">👤</span>';
+                                }}
+                            />
+                        </div>
+                        <p style={{
+                            marginTop: '0.75rem',
+                            fontWeight: '600',
+                            color: 'var(--color-primary)',
+                            fontSize: '1.1rem'
+                        }}>Clément</p>
+                    </div>
+                    <h2 className="section-title" style={{ marginBottom: 0 }}>À propos</h2>
+                </div>
 
+                <div className="content" style={{ maxWidth: '800px', textAlign: 'center' }}>
                     <div style={{
                         fontSize: '1.1rem',
                         color: 'var(--color-text-light)',
@@ -86,11 +131,11 @@ const About = () => {
                 }}>
                     <p>
                         Mon parcours de plus de 30 années dans la marine nationale m'a permis de m'ouvrir à d'autres
-                        cultures, a développé mon sens de l'écoute et mon empathie.
+                        cultures, et a développé mon sens de l'écoute et mon empathie.
                     </p>
                     <p>
                         Après avoir suivi une formation en réflexologie plantaire et aussi pratiqué durant plus d'une année
-                        afin de préciser ma technique, je vous propose cette pratique bien être à base de pressions et
+                        afin de préciser ma technique, je vous propose cette pratique bien être à base d'acupressions et
                         touchers spécifiques sur les parties des pieds qui ont toutes une correspondance avec un organe ou
                         une partie du corps.
                     </p>
@@ -100,7 +145,7 @@ const About = () => {
                     </p>
                     <p>
                         Chaque séance vous placera dans une bulle de réconfort et permettra à votre corps de s'autoréguler,
-                        (homéostasie). Bien entendu, la réflexologie plantaire n'a pas pour but de poser un diagnostique
+                        (homéostasie). Bien entendu, la réflexologie plantaire n'a pas pour but de poser un diagnostic
                         médical et ne saurait se substituer à la médecine conventionnelle ou allopathique mais doit être
                         considérée comme une voie complémentaire qui permettra d'optimiser les effets de cette dernière.
                     </p>
@@ -114,7 +159,7 @@ const About = () => {
                     </p>
                     <p>
                         Ils savent parfaitement exprimer une multitude d'émotions telles que, (l'anxiété, le stress, la peur, le
-                        courage, la nervosité, le bonheur, la joie, la peine, la timidité, la prudence, l'ennui, la paresse, la
+                        courage, la nervosité, le bonheur, la joie, la peine, la prudence, l'ennui, la paresse, la
                         fatigue, la pudeur, la vitalité, la confiance, la maladresse, la timidité, l'humilité, la dépression, la
                         colère, la soumission, la séduction, la sensualité...etc).
                     </p>
