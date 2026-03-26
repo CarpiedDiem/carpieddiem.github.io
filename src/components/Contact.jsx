@@ -12,7 +12,7 @@ const Contact = () => {
         e.preventDefault();
         const subject = encodeURIComponent(`Demande de RDV - ${form.prenom} ${form.nom}`);
         const body = encodeURIComponent(
-            `Bonjour,\n\n${form.message}\n\n---\nNom : ${form.nom}\nPrénom : ${form.prenom}\nEmail : ${form.email}\nTéléphone : ${form.tel}`
+            `${form.message}\n\n---\nNom : ${form.nom}\nPrénom : ${form.prenom}\nEmail : ${form.email}\nTéléphone : ${form.tel}`
         );
         window.location.href = `mailto:carpied-diem@outlook.com?subject=${subject}&body=${body}`;
     };
