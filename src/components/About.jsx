@@ -1,8 +1,11 @@
 import React from 'react';
+import useScrollAnimation from '../hooks/useScrollAnimation';
 
 const About = () => {
+    const sectionRef = useScrollAnimation();
+
     return (
-        <section id="about" className="section-padding" style={{ backgroundColor: 'var(--color-white)' }}>
+        <section ref={sectionRef} id="about" className="section-padding fade-in-section" style={{ backgroundColor: 'var(--color-white)' }}>
             <div className="container" style={{
                 display: 'flex',
                 flexDirection: 'column',

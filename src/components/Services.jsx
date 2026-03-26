@@ -1,7 +1,9 @@
 import React from 'react';
 import { CheckCircle2 } from 'lucide-react';
+import useScrollAnimation from '../hooks/useScrollAnimation';
 
 const Services = () => {
+    const sectionRef = useScrollAnimation();
     const services = [
         {
             title: "Séance Complète",
@@ -43,7 +45,7 @@ const Services = () => {
     ];
 
     return (
-        <section id="services" className="section-padding" style={{ backgroundColor: '#f9fafb' }}>
+        <section ref={sectionRef} id="services" className="section-padding fade-in-section" style={{ backgroundColor: '#f9fafb' }}>
             <div className="container">
                 <h2 className="section-title">Mes Prestations</h2>
 
