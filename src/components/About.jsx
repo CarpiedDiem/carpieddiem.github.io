@@ -10,9 +10,54 @@ const About = () => {
                 gap: '4rem'
             }}>
 
-                <div className="content" style={{ maxWidth: '800px', textAlign: 'center' }}>
-                    <h2 className="section-title">À propos</h2>
+                {/* En-tête À propos avec photo */}
+                <div style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '2rem',
+                    flexWrap: 'wrap',
+                    justifyContent: 'center'
+                }}>
+                    <div style={{ textAlign: 'center' }}>
+                        {/* TODO: Remplacer par la vraie photo de Clément */}
+                        <div style={{
+                            width: '140px',
+                            height: '140px',
+                            borderRadius: '50%',
+                            overflow: 'hidden',
+                            border: '3px solid var(--color-secondary)',
+                            boxShadow: '0 8px 20px rgba(44, 85, 69, 0.15)',
+                            backgroundColor: 'var(--color-accent)',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            margin: '0 auto'
+                        }}>
+                            <img
+                                src="/assets/photo-clement.jpg"
+                                alt="Clément - Praticien en réflexologie plantaire"
+                                style={{
+                                    width: '100%',
+                                    height: '100%',
+                                    objectFit: 'cover'
+                                }}
+                                onError={(e) => {
+                                    e.target.style.display = 'none';
+                                    e.target.parentElement.innerHTML = '<span style="font-size: 3rem; color: var(--color-secondary);">👤</span>';
+                                }}
+                            />
+                        </div>
+                        <p style={{
+                            marginTop: '0.75rem',
+                            fontWeight: '600',
+                            color: 'var(--color-primary)',
+                            fontSize: '1.1rem'
+                        }}>Clément</p>
+                    </div>
+                    <h2 className="section-title" style={{ marginBottom: 0 }}>À propos</h2>
+                </div>
 
+                <div className="content" style={{ maxWidth: '800px', textAlign: 'center' }}>
                     <div style={{
                         fontSize: '1.1rem',
                         color: 'var(--color-text-light)',
