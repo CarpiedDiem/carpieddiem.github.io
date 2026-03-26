@@ -1,7 +1,22 @@
-import React from 'react';
-import { Mail, Phone, Instagram, MapPin } from 'lucide-react';
+import React, { useState } from 'react';
+import { Mail, Instagram, MapPin } from 'lucide-react';
 
 const Contact = () => {
+    const [form, setForm] = useState({ nom: '', prenom: '', email: '', tel: '', message: '' });
+
+    const handleChange = (e) => {
+        setForm({ ...form, [e.target.name]: e.target.value });
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const subject = encodeURIComponent(`Demande de RDV - ${form.prenom} ${form.nom}`);
+        const body = encodeURIComponent(
+            `Bonjour,\n\n${form.message}\n\n---\nNom : ${form.nom}\nPrénom : ${form.prenom}\nEmail : ${form.email}\nTéléphone : ${form.tel}`
+        );
+        window.location.href = `mailto:carpied-diem@outlook.com?subject=${subject}&body=${body}`;
+    };
+
     return (
         <section id="contact" className="section-padding" style={{ backgroundColor: 'var(--color-primary)', color: 'white' }}>
             <div className="container">
@@ -66,15 +81,15 @@ const Contact = () => {
                             </div>
                         </div>
 
-                        {/* Simple Form (Visual Only for now) */}
-                        <form style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }} onSubmit={(e) => e.preventDefault()}>
+                        {/* Formulaire mailto */}
+                        <form style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }} onSubmit={handleSubmit}>
                             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
-                                <input type="text" placeholder="Nom" style={inputStyle} />
-                                <input type="text" placeholder="Prénom" style={inputStyle} />
+                                <input type="text" name="nom" placeholder="Nom" value={form.nom} onChange={handleChange} style={inputStyle} />
+                                <input type="text" name="prenom" placeholder="Prénom" value={form.prenom} onChange={handleChange} style={inputStyle} />
                             </div>
-                            <input type="email" placeholder="Votre email" style={inputStyle} />
-                            <input type="tel" placeholder="Téléphone" style={inputStyle} />
-                            <textarea placeholder="Votre message ou demande de RDV..." style={{ ...inputStyle, minHeight: '120px', resize: 'vertical' }}></textarea>
+                            <input type="email" name="email" placeholder="Votre email" value={form.email} onChange={handleChange} style={inputStyle} />
+                            <input type="tel" name="tel" placeholder="Téléphone" value={form.tel} onChange={handleChange} style={inputStyle} />
+                            <textarea name="message" placeholder="Votre message ou demande de RDV..." value={form.message} onChange={handleChange} style={{ ...inputStyle, minHeight: '120px', resize: 'vertical' }}></textarea>
                             <button type="submit" className="btn btn-primary" style={{ marginTop: '1rem', width: '100%' }}>
                                 Envoyer ma demande
                             </button>
