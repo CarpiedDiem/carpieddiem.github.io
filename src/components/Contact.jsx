@@ -112,30 +112,6 @@ const Contact = () => {
                             </button>
                         </form>
                     </div>
-
-                    {/* Carte Google Maps */}
-                    <div style={{ marginTop: '3rem' }}>
-                        <h3 style={{ fontSize: '1.3rem', marginBottom: '1rem', textAlign: 'center', color: 'var(--color-primary)' }}>
-                            Zone d'intervention
-                        </h3>
-                        <div style={{
-                            borderRadius: '1rem',
-                            overflow: 'hidden',
-                            boxShadow: '0 4px 15px rgba(0,0,0,0.08)',
-                            border: '1px solid #e5e7eb'
-                        }}>
-                            <iframe
-                                title="Zone d'intervention Carpied Diem - Guipavas et environs"
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d84956.5!2d-4.45!3d48.43!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4816bbe1d6e4b4e5%3A0x40ca5cd36e56db0!2sGuipavas!5e0!3m2!1sfr!2sfr!4v1"
-                                width="100%"
-                                height="300"
-                                style={{ border: 0, display: 'block' }}
-                                allowFullScreen=""
-                                loading="lazy"
-                                referrerPolicy="no-referrer-when-downgrade"
-                            ></iframe>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
