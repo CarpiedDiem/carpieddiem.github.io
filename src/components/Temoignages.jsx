@@ -111,6 +111,70 @@ const Temoignages = () => {
                             <p style={{ fontSize: '0.85rem', color: '#9ca3af' }}>Mars 2025</p>
                         </div>
                     </div>
+
+                    {/* Avis 4 : Valerie */}
+                    <div style={{
+                        padding: '2rem',
+                        backgroundColor: 'white',
+                        borderRadius: '1.5rem',
+                        boxShadow: '0 10px 30px rgba(0,0,0,0.05)',
+                        display: 'flex',
+                        flexDirection: 'column',
+                        gap: '1rem',
+                        position: 'relative'
+                    }}>
+                        <MessageCircle size={32} color="var(--color-accent)" style={{ position: 'absolute', top: '2rem', right: '2rem', opacity: 0.5 }} />
+                        <div style={{ display: 'flex', gap: '0.25rem' }}>
+                            {[1, 2, 3, 4, 5].map((i) => (
+                                <Star key={i} size={18} color="var(--color-secondary)" fill="var(--color-secondary)" />
+                            ))}
+                        </div>
+                        <p style={{
+                            color: 'var(--color-text-light)',
+                            fontSize: '1rem',
+                            fontStyle: 'italic',
+                            lineHeight: 1.6,
+                            flex: 1
+                        }}>
+                            "Clement je te remercie vivement pour ce soin qui a porté ses fruits .un bien-être insoupçonnable et une relaxation totale accompagnée de ton empathie légendaire je recommande ce soin sans hésitation à très bientôt"
+                        </p>
+                        <div>
+                            <p style={{ fontWeight: '600', color: 'var(--color-primary)' }}>Valerie</p>
+                            <p style={{ fontSize: '0.85rem', color: '#9ca3af' }}>Il y a 1 an</p>
+                        </div>
+                    </div>
+
+                    {/* Avis 5 : Céline */}
+                    <div style={{
+                        padding: '2rem',
+                        backgroundColor: 'white',
+                        borderRadius: '1.5rem',
+                        boxShadow: '0 10px 30px rgba(0,0,0,0.05)',
+                        display: 'flex',
+                        flexDirection: 'column',
+                        gap: '1rem',
+                        position: 'relative'
+                    }}>
+                        <MessageCircle size={32} color="var(--color-accent)" style={{ position: 'absolute', top: '2rem', right: '2rem', opacity: 0.5 }} />
+                        <div style={{ display: 'flex', gap: '0.25rem' }}>
+                            {[1, 2, 3, 4, 5].map((i) => (
+                                <Star key={i} size={18} color="var(--color-secondary)" fill="var(--color-secondary)" />
+                            ))}
+                        </div>
+                        <p style={{
+                            color: 'var(--color-text-light)',
+                            fontSize: '1rem',
+                            fontStyle: 'italic',
+                            lineHeight: 1.6,
+                            flex: 1
+                        }}>
+                            "Un grand moment de détente mais surtout de reconnexion avec soi. Une sensation d'ancrage incroyable à la fin du soin j'étais bluffée.<br /><br />Je ne peux que recommander et je te souhaite de développer ton activité car tu m'as été d'une grande aide et ce soin a réduit certaines de mes douleurs. Un énorme merci"
+                        </p>
+                        <div>
+                            <p style={{ fontWeight: '600', color: 'var(--color-primary)' }}>Céline</p>
+                            <p style={{ fontSize: '0.85rem', color: '#9ca3af' }}>Il y a 1 an</p>
+                        </div>
+                    </div>
                 </div>
 
                 <div style={{ textAlign: 'center' }}>
