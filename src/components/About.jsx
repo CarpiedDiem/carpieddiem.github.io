@@ -37,7 +37,7 @@ const About = () => {
                             margin: '0 auto'
                         }}>
                             <img
-                                src="/assets/photo-clement.jpg"
+                                src="/assets/photo-clement.jpeg"
                                 alt="Clément - Praticien en réflexologie plantaire"
                                 style={{
                                     width: '100%',
