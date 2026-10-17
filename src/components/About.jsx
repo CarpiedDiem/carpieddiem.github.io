@@ -168,7 +168,7 @@ const About = () => {
                     </p>
                     <p>
                         De plus, ils supportent 2,5 fois le poids de notre corps à chaque pas et durant notre vie auront
-                        transporté en moyenne plus de 5500 wagons de marchandises durant les 4 tours du monde qu'il
+                        transporté en moyenne plus de 3000 wagons de marchandises durant les 4 tours du monde qu'il
                         nous auront permis de parcourir.
                     </p>
                     <p>
